@@ -6,9 +6,9 @@ section: Getting Started
 
 To get started, first install Excalibur through npm (TypeScript typings are best supported in npm):
 
-    ```bash
-    npm install excalibur
-    ```
+```bash
+npm install excalibur
+```
 
 ### TypeScript Configuration
 
@@ -81,21 +81,21 @@ Adding an `import "regenerator-runtime/runtime";` in your entry file is needed t
 
 Using npm to install Parcel:
 
-    ```bash
-    npm install parcel-bundler --save-dev
-    ```
+```bash
+npm install parcel --save-dev
+```
 
 Using npm to install Excalibur and TypeScript:
 
-    ```bash
-    npm install excalibur typescript
-    ```
+```bash
+npm install excalibur typescript
+```
 
 Configure your tsconfig.json:
 
-    ```bash
-    tsc --init
-    ```
+```bash
+npx tsc --init
+```
 
 The suggested file structure is as follows:
 
@@ -131,16 +131,16 @@ Include the **TypeScript** file in your html:
 <html>
   <head></head>
   <body>
-    <script src="./index.ts"></script>
+    <script src="./index.ts" type="module"></script>
   </body>
 </html>
 ```
 
 Build and run with Parcel!
 
-    ```bash
-    npx parcel src/index.html --no-autoinstall
-    ```
+```bash
+npx parcel src/index.html --no-autoinstall
+```
 
 ### Webpack
 
